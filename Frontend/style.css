@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+html ::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: #fe5b3d;
+    border-radius: 5rem;
+}
+
+.navbar-text {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eeeff1;
+    padding: 15px 70px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo-img {
+    width: 40px;
+}
+
+.logo-text {
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #444;
+    font-weight: 500;
+}
+
+.navbar a::after {
+    content: " ";
+    width: 0;
+    height: 3px;
+    background: linear-gradient(#fe5b3d, #ffac38);
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar-btn button{
+    width: relative;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: 500;
+    background-color: #3f31b8;
+    border-radius: 0.5rem;
+}
+
+.heading {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.heading-text {
+    color: #ffac38;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.about-img {
+    margin-top: 10px;
+}
+
+#p1 {
+    font-weight: 500;
+    font-size: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.meet {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.team {
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.members {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.team-member {
+    display: flex;
+    
+}
+
+.team-content {
+    border: 2px solid black;
+    text-align: center;
+    
+}
+
+.team-info {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.car-heading {
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.cars {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.car-justification {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.booking {
+    margin: 30px;
+}
+
+.booking-info {
+    display:flex;
+}
+
+.booking-box {
+    margin-left: 30px;
+}
+
+.date-info {
+    padding-top: 20px;
+    width: 200px;
+}
+
+.date {
+    margin: 0 30px 30px 30px;
+}
