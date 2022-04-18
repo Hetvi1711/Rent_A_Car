@@ -8,25 +8,65 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="booking">
-        <div class="booking-details">
-            <h2 class="booking-heading">Booking Detail</h2>
+     <!-- Navbar Start -->
+     <div class="navbar-text">
+        <div class="logo">
+        <img  class="logo-img" src="./Images/logo.png" alt="company logo" height="50">
+        <h2 class="logo-text">Rent-A-Car</h2>
+        </div>
+        
+        <ul class="navbar">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="">Cars</a>
+                <div class="sub-navbar">
+                    <ul>
+                        <li><a href="cars.html">Hatchback</a></li>
+                        <li><a href="Sedan.html">Sedan</a></li>
+                        <li><a href="SUV.html">SUV</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="services.html">Service</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Booking.html">Bookings</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+
+        <div class="navbar-btn">
+            <button class="Login"><a href="login.html">Login</a></button>
+            <button class="Sign-Up"><a href="Signup.html">Sign Up</a></button>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    
+    <div class="banner">
+        <h1 class="banner-text">Booking Details</h1>
+    </div>
+
+    <div class="booking" style="display: flex; justify-content: space-between;">
                 <div class="booking-main">
+                    <h2 class="booking-heading">Booking Detail</h2>
                     <div class="booking-info">
                         <div class="date-info">
                             <select style="height: 50px; width: 150px;">
                                 <option selected>Pickup Location</option>
-                                <option value="1">Location 1</option>
-                                <option value="2">Location 2</option>
-                                <option value="3">Location 3</option>
+                                <option value="1">Ahmedabad</option>
+                                <option value="2">Gandhinagar</option>
+                                <option value="3">Pune</option>
+                                <option value="1">Mumbai</option>
+                                <option value="2">Udaipur</option>
+                                <option value="3">Jainpur</option>
                             </select>
                         </div>
                         <div class="date-info">
                             <select class="booking-box" style="height: 50px; width: 150px;">
                                 <option selected>Drop Location</option>
-                                <option value="1">Location 1</option>
-                                <option value="2">Location 2</option>
-                                <option value="3">Location 3</option>
+                                <option value="1">Ahmedabad</option>
+                                <option value="2">Gandhinagar</option>
+                                <option value="3">Pune</option>
+                                <option value="1">Mumbai</option>
+                                <option value="2">Udaipur</option>
+                                <option value="3">Jainpur</option>
                             </select>
                         </div>
                     </div>
@@ -47,17 +87,19 @@
                     <div class="form-group">
                         <textarea rows="4" cols="55" placeholder="Special Request"></textarea>
                     </div>
-                </div><br>
-            <h2 class="booking-heading">Payment Detail</h2> 
-            <div class="booking-info">
-                <div class="date-info">
-                    <span>Amount: </span><br><br>
-                    <span>Mode of Payment: </span><br>
-                    <input type="radio" value="online">Online<br>
-                    <input type="radio" value="cash on delivery">Cash on Delivery
+                </div><br> 
+                
+                <div class="booking-info">
+                    <div class="date-info" style="margin-right: 320px; padding: 10px; border: solid black 2px; border-radius: 3px;">
+                        <h2 class="booking-heading">Payment Detail</h2><br>
+                        <span>Amount: </span><br><br>
+                        <span>Mode of Payment: </span><br>
+                        <input type="radio" value="online" name="payment">Online<br>
+                        <input type="text" placeholder="id@upi"><br><br>
+                        <input type="radio" value="cash on delivery" name="payment">Payment while pickup
+                    </div>
                 </div>
             </div>   
-        </div>
     </div>
 </body>
 </html>
